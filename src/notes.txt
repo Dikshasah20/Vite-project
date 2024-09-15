@@ -1,0 +1,19 @@
+facebook ko ek problem najar agi ki real time mein wo notifications and reactions ko show nahi kar paa rahe hai, unhe reactions, notifications and other data deliver karne mein page reload karna pad raha hai, and wo islive kyoki they were using something called php, ab is problem se niptane ke live 2013 mein ek facebook ke engineer ne ek library bangai ye library khaas thi, kyoki ye data ko real time mein dikha paa rabi thi, par is library ke kaam karne ka tareeka different tha, ye main DOM tree ko update nahi krti hai directly, matlab ki agar page mein kuchh bhi change hug to directly main DOM tree update nahi hogg, is library ka khud ka ek DOM tree hai uska naam hai virtual DOM ye DOM tree exact copy hai real DOM tree ka, bas ek difference hai, wo hai ki jab bhi virtual DOM mein kuchh change hoga to sirf use change kiva jaayega is ki change hug hai naa ki poore tree ko refresh kiva jaayega.
+
+-> react : very very very les  page reloads
+           extreme use of reuseable components
+           very very efficient
+
+
+ What- js library to maintain the frontend efficiently
+ why-  efficient and lightweight
+ how-  create components, and make data if you need it, link the data and change the data whenever you
+        want,react will react jb bhi data change hoga
+ when- to build project in big scale, in which lots of reuseablecomponents hai
+
+
+ Components-> components ek function hai jo ki return karega jsx
+          
+          jsx: html ki trah dikhne wala sytax hai but eshke pass uch sperpower hoti hai
+
+          <h1>{2+2}</h1> = 4
